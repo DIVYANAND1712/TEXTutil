@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Util - Format and Analyze Text</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1>Text Util</h1>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Enter the text to analyze below:</h2>
+        <textarea id="text-input" rows="8" placeholder="Start typing or paste your text here..."></textarea>
+        
+        <!-- Action Buttons -->
+        <div class="btn-group">
+            <button id="btn-upper" class="btn btn-primary">Convert to Uppercase</button>
+            <button id="btn-lower" class="btn btn-primary">Convert to Lowercase</button>
+            <button id="btn-spaces" class="btn btn-warning">Remove Extra Spaces</button>
+            <button id="btn-copy" class="btn btn-success">Copy to Clipboard</button>
+            <button id="btn-clear" class="btn btn-danger">Clear Text</button>
+        </div>
+
+        <!-- Analytics Section -->
+        <div class="summary">
+            <h3>Your Text Summary</h3>
+            <p>
+                <strong><span id="word-count">0</span></strong> words and 
+                <strong><span id="char-count">0</span></strong> characters
+            </p>
+            <p><span id="read-time">0.00</span> Minutes estimated reading time</p>
+        </div>
+
+        <!-- Live Preview Section -->
+        <div class="preview">
+            <h3>Preview</h3>
+            <p id="text-preview">Nothing to preview!</p>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
